@@ -1,0 +1,946 @@
+.container{
+    width: 1170px;
+    text-align: center;
+    margin: 0 auto;
+}
+.flex_r{
+    display: flex;
+}
+.head{
+    padding: 140px 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 20px;
+    background-image: url("../images/main.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.comp_img{
+    margin-top: 20px;
+    background-image: url("../images/comp/image.png");
+    background-size: contain;
+    width: 596px;
+    height: 460px;
+    background-repeat: no-repeat;
+}
+.head h1{
+    padding-right: 30px;
+    color:white;
+    width: 800px;
+    text-align: left;
+    height: 290px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.grid input{
+    text-align: left;
+    width: 50px;
+}
+.grid input[type='checkbox']:checked {
+    background-color: #DBE4EB;
+}
+.grid input[type='checkbox']:checked:after {
+    content: '\2713';
+    color:#2D4EF8;
+}
+.grid input[type='checkbox']{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20px !important;
+    height: 20px !important;
+    appearance:none;
+    border-radius:10%;
+    border: 1px solid rgb(191 35 42 / 90%);
+    box-shadow: none;
+    font-size: 1em;
+}
+.grid2 input[type='radio']{
+    width: 20px !important;
+    height: 20px !important;
+}
+.grid label{
+    margin-left: 15px;
+    color: #6E7880;
+    font-size: 21px;
+}
+/* .grid2{
+
+} */
+.grid2 label{
+    margin-left: 15px;
+    color: #6E7880;
+    font-size: 21px;
+}
+.right{
+    padding-left: 50px;
+}
+.raz{
+    display: grid;
+    background: white;
+    border-radius: 50px;
+    margin-top: -30px;
+    padding: 20px;
+}
+.raz h2{
+    font-size: 24px;
+    color: #000000;
+    text-align: left;
+}
+.butWite{
+    border-radius: 250px 100px 0px 0px;
+    width: 300px;
+    padding: 20px;
+    background: white;
+}
+.butWite button:hover{
+    cursor: pointer;
+    border: 1px solid #1b77bf;
+}
+.but{
+    margin-left: 20px;
+    color: #6E7880;
+    font-size: 21px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #99A7B2;
+    width: 120px;
+    height: 50px;
+}
+.filt{
+    color: #000000;
+    font-size: 34px;
+    margin-top: 0px;
+    padding: 20px;
+    width: 100px;
+    background-color: #ECF7FD;
+}
+.dateTim label{
+    font-size: 21px;
+    color: #99A7B2;
+    
+}
+.palka{
+    margin-left: 20px;
+    padding:0px 0px 0px 10px;
+    border-left: 1px solid #99A7B2;
+    margin-bottom: 20px;
+}
+.dateTim input{
+    width: 130px;
+}
+.rig{
+    margin-left: 30px;
+}
+.find{
+    border: 0px;
+    padding: 10px 170px 10px 50px;
+    border-radius: 20px;
+    background: white;
+    font-family:'Open Sans';
+    font-size: 21px;
+    color: #99A7B2;
+    border: 0px;
+}
+.buttonSub{
+    margin: 5px 0px 0px 10px;
+    background: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #0A0E35;
+    transition: 1s;
+}
+.buttonSub:hover, .buttonSub:focus{
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+    cursor: pointer;
+}
+.left svg{
+    padding-right: 20px;
+}
+.liv{
+    font-size:41px;
+    background: transparent;
+    border: 0px;
+    color: #2C4EC5;
+}
+.liv:hover{
+    cursor: pointer;
+}
+.content{
+    border-radius: 20px;
+    text-align: left;
+    background-color: #FFFFFF66;
+    color: white;
+    height: 284px;
+    width: 372px;
+    padding: 30px;
+    display: grid;
+}
+.content p{
+    width: 402px;
+    font-size: 24px;
+}
+.content h2{
+    margin-top: -10px;
+    width: 402px;
+    height: 120px;
+    font-size: 24px;
+}
+.content a{
+    background-color: white;
+    color: #2C4EC5;
+    font-size: 32px;
+    margin-top: 10px;
+    padding: 20px 0px;
+    text-align: center;
+    width: 362px;
+    font-family: "Open Sans";
+    text-decoration: none;
+    border-radius: 20px;
+}
+.content a:hover, .content a:focus{
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+    cursor: pointer;
+}
+.grids{
+    text-align: left;
+    display: grid;
+    color: #000000;
+    width: 900px;
+}
+.grids h1{
+    font-size: 38px;
+    padding-left: 40px;
+}
+.white{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: white;
+}
+.white h4{
+    font-size: 24px;
+}
+.white p{
+    font-size: 24px;
+}
+.texts{
+    border-radius: 30px;
+    background: white;
+    padding: 30px;
+    font-size: 24px;
+}
+.footer{
+    border-radius: 30px 30px 0px 0px;
+    background: white;
+    padding: 30px;
+    font-size: 24px;
+}
+.razde{
+    
+    margin-left: 50px;
+    text-align: left;
+    
+}
+.razde h1{
+    margin-top: 30px;
+    font-size: 38px;
+}
+.razdel{
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #6E7880;
+    border-radius: 20px;
+    height: 271px;
+    width: 320px;
+
+}
+.razdel ul{
+    margin: 0px;
+    padding: 00px;
+}
+.razdel ul li {
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+}
+.bub{
+    font-size: 62px;
+    width: 330px;
+    height: 300px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.bob{
+    font-size: 42px;
+    width: 330px;
+    height: 400px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.org_del{
+    width: 330px;
+    height: 180px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.list{
+    margin-top: 20px;
+    margin-left: -180px;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.select {
+    position: relative;
+}
+.select select {
+    display: block;
+    width: 100%; /* от ширины блока div */
+    padding: .75rem 2.5rem .75rem 1rem;/* отступы от текста до рамки */
+    background: none; /* убираем фон */
+    border: 1px solid #ccc; /* рамка */
+    border-radius: 3px;/* скругление полей формы */
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем дефолнтные стрелочки */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1rem;
+    color: #444;
+}
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+}
+@media (max-width:2561px)   {  
+    .content{
+        border-radius: 20px;
+        text-align: left;
+        background-color: #FFFFFF66;
+        color: white;
+        height: 284px;
+        width: 372px;
+        padding: 30px;
+        display: grid;
+        margin-right: 400px;
+    }
+    .content p{
+        width: 402px;
+        font-size: 24px;
+    }
+    .content h2{
+        margin-top: -10px;
+        width: 402px;
+        height: 120px;
+        font-size: 24px;
+    } 
+    .container{
+        width: 1920px;
+    }
+    .head{
+        padding: 50px 100px;
+    }
+    .head h1{
+        width: 700px;
+        font-size: 74px;
+        margin: 85px 20px 0px 0px;
+    }
+    .comp_img{
+        margin:110px -700px 0px 0px;
+        width: 1396px;
+        height: 460px;
+    }
+    .flex_r{
+        margin-top: 50px;
+    }
+    .left .filt{
+        font-size: 44px;
+    }
+    .butWite{
+        width: 330px;
+        margin-left: 45px;
+    }
+    .but{
+        margin-top: 5px;
+        font-size: 44px;
+        width: 220px;
+        height: 60px;
+        margin-left: 25px;
+    }
+    .raz{
+        width: 520px;
+        font-size: 44px;
+    }
+    .raz h2{
+        font-size: 44px;
+    }
+    .grid label{
+        margin-top: 12px;
+        font-size: 44px;
+    }
+    .grid2 label{
+        margin-top: 12px;
+        font-size: 44px;
+    }
+    .grid input{
+        margin-top: 14px;   
+    }
+    .grid input[type='checkbox']{
+        width: 80px !important;
+        height: 80px !important;
+        font-size: 1em;
+    }
+    .grid2 input[type='radio']{
+        margin-top: 10px;
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .dateTim .dater{
+        font-size: 44px;
+    }
+    .list{
+        margin-left: -20px;
+        font-size: 32px;
+    }
+    .right .flex input{
+        padding: 10px 28px;
+        font-size: 32px;
+    }
+    .right .flex .find{
+        padding: 10px 300px 10px 30px;
+        font-size: 32px;
+        width: 480px;
+    }
+    .buttonSub{
+        margin: 0px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:1921px) {
+    .content{
+        border-radius: 20px;
+        text-align: left;
+        background-color: #FFFFFF66;
+        color: white;
+        height: 284px;
+        width: 372px;
+        padding: 30px;
+        display: grid;
+        margin-right: 200px;
+    }
+    .content p{
+        width: 402px;
+        font-size: 24px;
+    }
+    .content h2{
+        margin-top: -10px;
+        width: 402px;
+        height: 120px;
+        font-size: 24px;
+    }
+    .container{
+        width: 1600px;
+    }
+    .head{
+        padding: 50px 100px;
+    }
+    .head h1{
+        width: 500px;
+        font-size: 48px;
+        margin: 45px 20px 0px 0px;
+    }
+    .comp_img{
+        /* margin:41px 0px 0px 640px; */
+        margin-top: 105px;
+        /* width: 496px; */
+        height: 360px;
+    }
+    .flex_r{
+        margin-top: 50px;
+    }
+    .left .filt{
+        font-size: 32px;
+    }
+    .butWite{
+        width: 160px;
+        margin-left: -15px;
+    }
+    .but{
+        margin-top: 5px;
+        font-size: 22px;
+        width: 120px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    .raz{
+        width: 310px;
+        font-size: 22px;
+    }
+    .raz h2{
+        font-size: 22px;
+    }
+    .grid label{
+        margin-top: 12px;
+        font-size: 22px;
+    }
+    .grid2 label{
+        margin-top: 12px;
+        font-size: 22px;
+    }
+    .grid input{
+        margin-top: 14px;
+    }
+    .grid input[type='checkbox']{
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 1em;
+    }
+    .grid2 input[type='radio']{
+        margin-top: 10px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .dateTim .dater{
+        font-size: 22px;
+    }
+    .list{
+        margin-left: -20px;
+        font-size: 22px;
+    }
+    .right .flex input{
+        padding: 10px 28px;
+        font-size: 22px;
+    }
+    .right .flex .find{
+        padding: 10px 300px 10px 30px;
+        font-size: 22px;
+        width: 300px;
+    }
+    .buttonSub{
+        margin: 0px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:1601px) {
+    .container{
+        width: 1380px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .head{
+        padding: 50px 100px;
+    }
+    .head h1{
+        width: 500px;
+        font-size: 48px;
+    }
+    .comp_img{
+        /* margin:63px 0px 0px 640px; */
+        margin-top: 133px;
+        /* width: 396px; */
+        height: 260px;
+    }
+    .flex_r{
+        margin-top: 50px;
+    }
+    .left .filt{
+        font-size: 24px;
+    }
+    .butWite{
+        width: 80px;
+        margin-left: -25px;
+    }
+    .but{
+        font-size: 14px;
+        width: 90px;
+        height: 30px;
+        margin-left: 5px;
+    }
+    .raz{
+        width: 210px;
+        font-size: 16px;
+    }
+    .raz h2{
+        font-size: 18px;
+    }
+    .grid label{
+        text-align: left;
+        font-size: 16px;
+    }
+    .grid2 label{
+        text-align: left;
+        width: 200px;
+        font-size: 16px;
+    }
+    .list{
+        margin-left: -30px;
+        font-size: 14px;
+    }
+    .right .flex input{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .right .flex .find{
+        padding: 10px 200px 10px 30px;
+        font-size: 14px;
+    }
+    .buttonSub{
+        margin: 0px;
+        margin-left: 10px;
+    }
+    
+}
+@media (max-width:1381px) {
+    .head{
+        padding: 50px 100px;
+    }
+    .head h1{
+        width: 700px;
+        font-size: 64px;
+    }
+    .comp_img{
+        margin-top:37px;
+        width: 296px;
+        height: 160px;
+    }
+}
+@media (max-width:1281px) {
+    .head{
+        padding: 50px 100px;
+    }
+    .head h1{
+        width: 700px;
+        font-size: 64px;
+    }
+    .comp_img{
+        margin-top:37px;
+        width: 296px;
+        height: 160px;
+    }
+}
+@media (max-width:1025px) {
+    .head{
+        
+    }
+    .head h1{
+        width: 381px;
+        font-size: 42px;
+    }
+    .comp_img{
+        margin-top: 39px;
+        width: 296px;
+        height: 228.46px;
+    }
+}
+@media (max-width:769px) {
+    .head{
+        padding: 47px 100px;
+    }
+    .head h1{
+        width: 410px;
+        font-size: 30px;
+    }
+    .comp_img{
+        margin-top: 32px;
+        width: 296px;
+        height: 228.46px;
+    }
+    
+}
+@media (max-width:481px) {
+    .container{
+        width: 490px;
+    }
+    .head{
+        margin: 15px 10px;
+        height: 443px;
+        width: 200px;
+        background-image: url("../images/telef.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: grid;
+        border-radius: 20px;
+    }
+    .head h1{
+        padding-top: 10px;
+        width: 300px;
+        font-weight: bold;
+        font-size: 36px;
+        letter-spacing: 2.1px;
+        margin-left: -30px;
+    }
+    .comp_img{
+        margin-left: -30px;
+        position: relative;
+        margin-top: -186px;
+        width: 300px;
+        height: 200px;
+    }
+    .flex_r{
+        margin-top: -10px;
+    }
+    .left .filt{
+        font-size: 22px;
+    }
+    .butWite{
+        width: 180px;
+        margin-left: -20px;
+    }
+    .but{
+        margin-top: -5px;
+        font-size: 18px;
+        width: 120px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .raz{
+        width: 380px;
+        font-size: 22px;
+    }
+    .raz h2{
+        font-size: 22px;
+    }
+    .grid label{
+        margin-top: 8px;
+        font-size: 22px;
+    }
+    .grid2 label{
+        margin-top: 8px;
+        width: 280px;
+        text-align: left;
+        font-size: 22px;
+    }
+    .grid input{
+        margin-top: 10px;
+    }
+    .grid input[type='checkbox']{
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 1em;
+    }
+    .grid2 input[type='radio']{
+        margin-top: 10px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .dateTim .dater{
+        font-size: 22px;
+    }
+    .list{
+        margin-left: 0px;
+        font-size: 18px;
+    }
+    .right{
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+    .flex_r{
+        display: grid;
+    }
+    .right .flex input{
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+    .right .flex .find{
+        padding: 10px 28px 10px 28px;
+        width: 240px;
+        font-size: 18px;
+    }
+    .buttonSub{
+        margin: 0px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:361px) {
+    .content{
+        border-radius: 20px;
+        text-align: left;
+        background-color: #FFFFFF66;
+        color: white;
+        height: 184px;
+        width: 190px;
+        padding: 30px;
+        display: grid;
+        margin-left:-50px;
+        margin-top: 10px;
+    }
+    .content p{
+        width: 232px;
+        font-size: 18px;
+    }
+    .content h2{
+        margin-top: -10px;
+        width: 222px;
+        height: 80px;
+        text-align: justify;
+        overflow-y: hidden;
+        font-size: 22px;
+    }
+    .content a{
+        font-size: 22px;
+        margin-top: -10px;
+        padding: 10px 20px;
+        width: 162px;
+    }
+    .liv{
+        font-size: 22px;
+    }
+    .grids h1{
+        font-size: 22px;
+        margin-left: -100px;
+    }
+    .white {
+        width: 130px;
+        display: grid;
+        text-align: center;
+        font-size: 22px;
+    }
+    .white h4{
+        width: 100px;
+    }
+    .white p{
+        width: 100px;
+    }
+    .texts{
+        width: 170px;
+        margin-left: -20px;
+    }
+    .footer{
+        width: 170px;
+        margin-left: -20px;
+    }
+    .container{
+        width: 380px;
+    }
+    .head{
+        margin: 15px 10px;
+        height: 443px;
+        width: 200px;
+        background-image: url("../images/telef.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: grid;
+        border-radius: 20px;
+    }
+    .head h1{
+        padding-top: 10px;
+        width: 194px;
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 2.1px;
+        height: 100px;
+    }
+    .comp_img{
+        position: relative;
+        margin-left: -50px;
+        margin-top:129px;
+        width:246px;
+        height: 280px;
+    }
+    .flex_r{
+        margin-top: 50px;
+    }
+    .left .filt{
+        font-size: 18px;
+    }
+    .butWite{
+        width: 90px;
+        margin-left: -20px;
+    }
+    .but{
+        margin-top: 0px;
+        font-size: 14px;
+        width: 80px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    .raz{
+        width: 220px;
+        font-size: 18px;
+    }
+    .raz h2{
+        font-size: 18px;
+    }
+    .grid label{
+        margin-top: 14px;
+        font-size: 14px;
+    }
+    .grid2 label{
+        margin-top: 12px;
+        width: 170px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .grid input{
+        margin-top: 10px;
+    }
+    .grid input[type='checkbox']{
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 1em;
+    }
+    .grid2 input[type='radio']{
+        margin-top: 10px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .dateTim .dater{
+        font-size: 18px;
+    }
+    .list{
+        margin-left: 0px;
+        font-size: 14px;
+    }
+    .right{
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+    .flex_r{
+        display: grid;
+    }
+    .right .flex input{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .right .flex .find{
+        padding: 10px 28px 10px 28px;
+        width: 105px;
+        font-size: 14px;
+    }
+    .buttonSub{
+        margin: 0px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    
+}

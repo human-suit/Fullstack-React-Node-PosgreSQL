@@ -1,0 +1,386 @@
+.mes{
+    display: flex;
+    margin-top: 20px;
+}
+.lef{
+    text-align: left;
+    width: 700px;
+    border-radius: 20px;
+    padding: 20px;
+    background: white;
+}
+.pep{
+    margin-top: 30px;
+    font-size: 21px;
+    font-family: "Open Sans";
+    width: 680px;
+    height: 140px;
+    color: #6E7880;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+.hus{
+    height: 120px;
+    -webkit-line-clamp: 3; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+    
+    
+    text-overflow: ellipsis;
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    color: #000000;
+}
+.button{
+    margin-top: 30px;
+    background: #45459D;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 21px;
+    font-family: "Open Sans";
+}
+.rig{
+    text-align: center;
+    margin: 0px 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-size: cover;
+    background-image: url("../images/send.jpg");
+    background-repeat: no-repeat;
+    
+    z-index: -10;
+}
+.gree{
+    z-index: 10;
+    color: #000000;
+    padding: 10px;
+    width: 350px;
+    border-radius: 20px;
+    background: #FFFFFF66;
+    
+}
+.del{
+    width: 330px;
+    height: 60px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.pereh{
+    padding: 0px 10px;
+}
+.flex{
+    display: flex;
+}
+.top{
+    margin: 30px 0px;
+}
+.bu{
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2D4EF8;
+    border: 0px;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+.per{
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2D4EF8;
+    border: 0px;
+    border-radius: 10px;
+    transition: 1s;
+    border-color: rgba(159, 164, 168, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+.lec{
+    border: 0px;
+    color: #6E7880;
+    font-size: 90px;
+    background: #ECF7FD;
+    transition: 1s;
+}
+.lec:hover, .lec:focus{
+    color: rgba(82, 168, 236, 0.8);
+    font-size: 38;
+}
+.button:hover{
+    cursor: pointer;
+}
+#toc{
+    margin-right: 20px;
+}
+.Kran{
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #45459d;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+.Kran a{
+    text-decoration: none;
+    color: white;
+}
+.Kran:hover{
+    cursor: pointer;
+    padding: 12px;
+}
+.flex_D{
+    display: flex;
+}
+@media (max-width:2561px) {
+    .lef{
+        width: 770px;
+    }
+    .hus{
+        font-size: 44px;
+        height: 100px;
+    }
+    .pep{
+        font-size: 44px;
+        width: 760px;
+    }
+    .button{
+        font-size: 44px;
+    }
+    .rig{
+        width: 430px;
+    }
+    .gree{
+        width: 410px;
+        font-size: 26px;
+    }
+    .del{
+        font-size: 28px;
+        width: 390px;
+        height: 40px;
+    }
+    .lec{
+        margin-top: -10px;
+        font-size: 120px;
+    }
+    .bu{
+        padding: 20px;
+        font-size: 50px;
+        width: 100px;
+        margin-top: 10px;
+    }
+    .per{
+        padding: 20px;
+        font-size: 50px;
+    }
+    .flex_D{
+        display: flex;
+    }
+    .pereh{
+        padding: 0px 5px;
+    }
+}
+@media (max-width:1921px) {
+    .lef{
+        width: 590px;
+    }
+    .hus{
+        font-size: 22px;
+        height: 72px;
+    }
+    .pep{
+        font-size: 22px;
+        width: 588px;
+    }
+    .button{
+        font-size: 22px;
+    }
+    .rig{
+        width: 320px;
+    }
+    .gree{
+        width: 300px;
+        font-size: 18px;
+    }
+    .del{
+        font-size: 18px;
+        width: 290px;
+        height: 40px;
+    }
+    .lec{
+        margin-top: 2%;
+        font-size: 70px;
+    }
+    .bu{
+        padding: 20px;
+        font-size: 30px;
+        width: 70px;
+        margin-top: 10px;
+    }
+    .per{
+        padding: 20px;
+        font-size: 30px;
+    }
+    .flex_D{
+        display: flex;
+    }
+    .pereh{
+        padding: 0px 5px;
+    }
+}
+@media (max-width:1601px) {
+    .lef{
+        width: 550px;
+    }
+    .hus{
+        font-size: 18px;
+        height: 60px;
+    }
+    .pep{
+        font-size: 18px;
+        width: 530px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .rig{
+        width: 220px;
+    }
+    .gree{
+        width: 200px;
+        font-size: 14px;
+    }
+    .del{
+        font-size: 14px;
+        width: 210px;
+        height: 30px;
+    }
+    .lec{
+        margin-top: 2%;
+        font-size: 50px;
+    }
+    .bu{
+        padding: 10px;
+        font-size: 20px;
+        width: 50px;
+        margin-top: 10px;
+    }
+    .per{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .flex_D{
+        display: flex;
+    }
+    .pereh{
+        padding: 0px 5px;
+    }
+}
+@media (max-width:481px) {
+    .lef{
+        width: 200px;
+    }
+    .hus{
+        font-size: 18px;
+        height: 60px;
+    }
+    .pep{
+        font-size: 18px;
+        width: 190px;
+    }
+    .button{
+        font-size: 14px;
+    }
+    .rig{
+        width: 160px;
+    }
+    .gree{
+        width: 150px;
+        font-size: 12px;
+        margin-left: -5px;
+    }
+    .del{
+        font-size: 12px;
+        width: 150px;
+    }
+    .lec{
+        margin-top: 16px;
+        font-size: 32px;
+    }
+    .bu{
+        padding: 12px;
+        font-size: 18px;
+        width: 35px;
+        margin-top: 10px;
+    }
+    .per{
+        padding: 12px;
+        font-size: 18px;
+    }
+    .flex_D{
+        display: flex;
+    }
+    .pereh{
+        padding: 0px 5px;
+    }
+}
+@media (max-width:370px) {
+    .lef{
+        width: 100px;
+    }
+    .hus{
+        font-size: 18px;
+        height: 60px;
+    }
+    .pep{
+        font-size: 18px;
+        width: 100px;
+    }
+    .button{
+        font-size: 14px;
+    }
+    .rig{
+        width: 80px;
+    }
+    .gree{
+        width: 70px;
+        font-size: 10px;
+        margin-left: -5px;
+    }
+    .del{
+        font-size: 12px;
+        width: 60px;
+    }
+    .lec{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .bu{
+        padding: 8px;
+        font-size: 10px;
+        width: 20px;
+        margin-top: 10px;
+    }
+    .per{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .flex_D{
+        display: flex;
+    }
+    .pereh{
+        padding: 0px 5px;
+    }
+}

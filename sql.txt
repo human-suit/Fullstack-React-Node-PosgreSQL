@@ -1,0 +1,15 @@
+CREATE DATABASE startapDate;
+USE startapDate;
+CREATE TABLE Startaps(
+	id serial primary key,
+    nameStart VARCHAR(10000),
+	opisanie VARCHAR(10000),
+	trebovaniya VARCHAR(10000),
+	nameKomp VARCHAR(10000) NOT NULL,
+    statusData VARCHAR(10000),
+	crokVip VARCHAR(500),
+    price VARCHAR(1000) ,
+    open BOOLEAN,
+	url VARCHAR(1000),
+	age VARCHAR(250),
+);
