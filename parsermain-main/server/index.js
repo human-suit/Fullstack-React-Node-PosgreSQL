@@ -26,6 +26,7 @@ const io = new Server(server, {
 })
 
 const stat = {pro:[]}
+const sort = {pro:[]}
 
 const index = 1
 
@@ -75,9 +76,32 @@ async function test2(req, res){
     });
     
 }
+async function sortirovka(req, res){
+    const name = await db.query('SELECT * FROM public.startaps ORDER BY id DESC ')
+    res = name.rows
+    // console.log(res)
+    res.forEach(function(ex) {
+        var data = {id: [],name: [], namestart:[], opis:[], price:[], crokvip:[],statusdata:[],trebov:[], url: [], age: []}
+        data.id.push(ex.id)
+        data.name.push(ex.namekomp)
+        data.namestart.push(ex.namestart)
+        data.opis.push(ex.opisanie)
+        data.price.push(ex.price)
+        data.crokvip.push(ex.crokvip)
+        data.statusdata.push(ex.statusdata)
+        data.trebov.push(ex.trebovaniya)
+        data.url.push(ex.url)
+        data.age.push(ex.age)
+        sort.pro.push(data)
+        data = {}
+        console.log(sort)
+        
+    });
+    
+}
 
 test2() 
- 
+sortirovka()
 io.on('connection', (socket)=>{
     
     
@@ -86,6 +110,19 @@ io.on('connection', (socket)=>{
     socket.on('confirmation', () => { 
         
         console.log('The client received the person');
+        
+    });
+
+    socket.on('dateSpis', () => { 
+        socket.emit('dateSpis_join', stat);
+        console.log('Obratno');
+        
+    });
+
+    
+    socket.on('sort', () => { 
+        socket.emit('sort_join', sort);
+        console.log('Sortirovka');
         
     });
     

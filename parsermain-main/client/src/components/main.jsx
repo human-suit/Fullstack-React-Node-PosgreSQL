@@ -41,7 +41,7 @@ const Main = () =>{
         const searchParams = Object.fromEntries(new URLSearchParams(search))
         setParams(searchParams)
         
-    }, [search])
+    }, [search],[parSer])
 
 
     const handleChange = ({target: {value}})=>{
@@ -377,7 +377,9 @@ const Main = () =>{
                                             <optgroup label="Возрост">
                                             <option value="wqe">Для всех</option>
                                                     {spis.map((post, index) => (
+                                                        <div key={index}>
                                                         <option value="wqe">{post}</option>
+                                                        </div>
                                                     ))}
                                             </optgroup>
                                         </select>
@@ -413,8 +415,14 @@ const Main = () =>{
                             </div>
                         </div>
                         <div>
-                            <Messages value={[val, parSertch,parSer]}  >
-                            </Messages>
+                            { parSer == 1 &&
+                                <Messages value={[values, parSertch,parSer, state]}  >
+                                </Messages>
+                            }
+                            { parSer == 2 &&
+                                <Messages value={[values, parSertch,parSer, state]}  >
+                                </Messages>
+                            }
                         </div>
                         <div>
                             <form action="submit"></form>

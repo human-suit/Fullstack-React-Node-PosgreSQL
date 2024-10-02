@@ -18,7 +18,40 @@ const Message = ({ value }) =>{
     const [isActive, setActive] = useState(1);
     const [inx, setInx] = useState(1);
     
+    const date = state.pro
+
     useEffect(()=> {
+        if(value[2] == '2'){
+            // const pros = value[3]
+            // setState(pros)
+            // let sas = ''
+            // const pross = pros.pro[0].name
+            // for (let i = 0; i < (pros.pro).length; i++) {
+            //     let val = pros.pro[i]
+            //     for (let i = 0; i < val.length; i++) {
+            //         sas = val[0]
+            //     }
+            //     console.log( sas );
+
+                
+            // }   
+            socket.emit('sort');
+            socket.on('sort_join', (data) => {  
+                setState(data)
+                console.log(data)
+                
+            });
+            
+        }
+        if(value[2] == '1'){
+         
+            socket.emit('dateSpis');
+            socket.on('dateSpis_join', (data) => {  
+                setState(data)
+                console.log(data)
+            });
+            
+        }
         
         // отправляем данные на сервер
         // socket.emit('join', ({state})=>{
@@ -31,13 +64,13 @@ const Message = ({ value }) =>{
             console.log(data)
             socket.emit('confirmation');
          });
-         
+        
          setTimeout(() => {
             setAsyncData("something");
         }, 4500);
 
         
-    }, [])
+    }, [value])
 
     const handleSubmit = (e) =>{
         e.preventDefault()
@@ -188,7 +221,7 @@ const Message = ({ value }) =>{
     const up = (event) =>{
         alert(myHandler.caller.arguments[0].target.id)
     }
-    const date = state.pro
+    
     const count = []
 
     // console.log(date.length)
@@ -231,26 +264,10 @@ const Message = ({ value }) =>{
             
         }
         
+        
     }
     console.log(value)
-    if(value[0] != ""){
-        if(value[2]=="1"){
-            date.sort()
-        } else if(value[2]=="2"){
-            date.sort(function (a, b) {
-                if (a.name < b.name) {
-                return -1;
-                }
-                if (a.name > b.name) {
-                return 1;
-                }
-                return 0;
-            });
-        }
-    }
     
-
-
     
 
     return asyncData ? 
@@ -350,7 +367,7 @@ const Message = ({ value }) =>{
                     <input type="submit" onSubmit={handleDown} className={styles.lec} value="<" />   
             </form>
                     {date.map((post, index) => (
-                        <div>
+                        <div key={index}>
                         <div className={styles.wtf} key={index}>
                             {index < (date.length)/3 && index  < 7 &&
                                 <div className={styles.pereh}>
@@ -374,7 +391,8 @@ const Message = ({ value }) =>{
                             }
                             
                         </div>
-                        </div>                         
+                        </div>
+                                                  
                     ))}
             <form action="" onSubmit={handleUp}>  
                     <input type="submit" onSubmit={handleUp} className={styles.lec} value=">" />   
