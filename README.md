@@ -185,6 +185,11 @@ search query or selection through a filter. After the selected
 program, the user should be able to fall into
 a page with a detailed description of the grant conditions and the ability to go to
 the main site of the program
+![photo_2025-01-27_14-18-35](https://github.com/user-attachments/assets/58713981-a9de-40e0-a4e5-eafc662040ec)
+![photo_2025-01-27_14-18-41](https://github.com/user-attachments/assets/051ea09d-1ae7-4f40-abe3-3476160b3043)
+![photo_2025-01-27_14-18-39](https://github.com/user-attachments/assets/e451cc0a-f66f-4802-8a55-fe9f8cc0959a)
+![photo_2025-01-27_14-18-37](https://github.com/user-attachments/assets/db695761-91f6-40a8-80bd-ecc0c1a38dd1)
+
 ![image](https://github.com/user-attachments/assets/5a0529a0-e96f-4937-8824-7ae737723a61)
 ![image](https://github.com/user-attachments/assets/a7768fca-5b82-41e1-86ad-fc99bb263f05)
 ![image](https://github.com/user-attachments/assets/33d15182-74d2-463e-844c-2768ed5b9397)
