@@ -86,7 +86,9 @@ PostgreSQL (или аналогичная)
 поисковому запросу или подбору через фильтр. После выбранной 
 программы пользователь должен иметь возможность провалиться в 
 страницу о подробном описании условий гранта и возможности перейти на 
-основной сайт программы
+основной сайт программы.
+
+
 En - Task: Development of a website for parsing information about grants
 General description of the task:
 Development of a website designed to aggregate and provide
